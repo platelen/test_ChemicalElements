@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 8167035873484125650}
   - component: {fileID: 1999745352678570441}
   - component: {fileID: 6027321111344065822}
-  - component: {fileID: 2600836967513138410}
   - component: {fileID: 336912072809132316}
   - component: {fileID: 66679988917633777}
+  - component: {fileID: 2600836967513138410}
+  - component: {fileID: -5482472094192424655}
   m_Layer: 0
   m_Name: Flask
   m_TagString: Untagged
@@ -87,18 +88,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &2600836967513138410
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2617357622814159735}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2092bb6eac096043aea9ca3f0ac88a6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!135 &336912072809132316
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -147,6 +136,31 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &2600836967513138410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2617357622814159735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2092bb6eac096043aea9ca3f0ac88a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-5482472094192424655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2617357622814159735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b227c91af0174e76b51317e857b3621a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _chemicalDataSo: {fileID: 0}
 --- !u!1 &4868731646348093096
 GameObject:
   m_ObjectHideFlags: 0
