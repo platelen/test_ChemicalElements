@@ -123,7 +123,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &63778896
+--- !u!1001 &34832383
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -131,17 +131,37 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1962500817}
     m_Modifications:
+    - target: {fileID: -6387522819219094969, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
+      propertyPath: _chemicalElement
+      value: H2
+      objectReference: {fileID: 0}
+    - target: {fileID: -5482472094192424655, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
+      propertyPath: _chemicalDataSo
+      value: 
+      objectReference: {fileID: 11400000, guid: fa46e3f24af94fd4fbabb9594355ee32, type: 2}
     - target: {fileID: 336912072809132316, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
       propertyPath: m_Center.x
       value: -0
       objectReference: {fileID: 0}
+    - target: {fileID: 1488180567124319412, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
+      propertyPath: interactionScript
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2617357622814159735, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
       propertyPath: m_Name
-      value: Flask (2)
+      value: Flask_asd_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2617357622814159735, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4868731646348093096, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8167035873484125650, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.32
+      value: -1.393
       objectReference: {fileID: 0}
     - target: {fileID: 8167035873484125650, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
       propertyPath: m_LocalPosition.y
@@ -225,17 +245,37 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1962500817}
     m_Modifications:
+    - target: {fileID: -6387522819219094969, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
+      propertyPath: _chemicalElement
+      value: O2
+      objectReference: {fileID: 0}
+    - target: {fileID: -5482472094192424655, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
+      propertyPath: _chemicalDataSo
+      value: 
+      objectReference: {fileID: 11400000, guid: a2e5837b3ad62e149a3007735d6a55a0, type: 2}
     - target: {fileID: 336912072809132316, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
       propertyPath: m_Center.x
       value: -0
       objectReference: {fileID: 0}
+    - target: {fileID: 1488180567124319412, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
+      propertyPath: interactionScript
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2617357622814159735, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
       propertyPath: m_Name
-      value: Flask (1)
+      value: Flask_HCI
+      objectReference: {fileID: 0}
+    - target: {fileID: 2617357622814159735, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4868731646348093096, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8167035873484125650, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.577
+      value: -0.958
       objectReference: {fileID: 0}
     - target: {fileID: 8167035873484125650, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
       propertyPath: m_LocalPosition.y
@@ -286,17 +326,37 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1962500817}
     m_Modifications:
+    - target: {fileID: -6387522819219094969, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
+      propertyPath: _chemicalElement
+      value: H2
+      objectReference: {fileID: 0}
+    - target: {fileID: -5482472094192424655, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
+      propertyPath: _chemicalDataSo
+      value: 
+      objectReference: {fileID: 11400000, guid: 5a57c0aa85619ae43a301ebd949ac1b4, type: 2}
     - target: {fileID: 336912072809132316, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
       propertyPath: m_Center.x
       value: -0
       objectReference: {fileID: 0}
+    - target: {fileID: 1488180567124319412, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
+      propertyPath: interactionScript
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2617357622814159735, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
       propertyPath: m_Name
-      value: Flask
+      value: Flask_H2O
+      objectReference: {fileID: 0}
+    - target: {fileID: 2617357622814159735, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4868731646348093096, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8167035873484125650, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.126
+      value: 0.481
       objectReference: {fileID: 0}
     - target: {fileID: 8167035873484125650, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
       propertyPath: m_LocalPosition.y
@@ -438,6 +498,137 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8167035873484125650, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
   m_PrefabInstance: {fileID: 347388530}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &904821977
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1962500817}
+    m_Modifications:
+    - target: {fileID: -6387522819219094969, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
+      propertyPath: _chemicalElement
+      value: O2
+      objectReference: {fileID: 0}
+    - target: {fileID: -5482472094192424655, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
+      propertyPath: _chemicalDataSo
+      value: 
+      objectReference: {fileID: 11400000, guid: a2e5837b3ad62e149a3007735d6a55a0, type: 2}
+    - target: {fileID: 66679988917633777, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
+      propertyPath: m_Constraints
+      value: 126
+      objectReference: {fileID: 0}
+    - target: {fileID: 336912072809132316, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
+      propertyPath: m_Radius
+      value: 0.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 336912072809132316, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
+      propertyPath: m_Center.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1488180567124319412, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
+      propertyPath: interactionScript
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2617357622814159735, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
+      propertyPath: m_Name
+      value: Flask_Mixing
+      objectReference: {fileID: 0}
+    - target: {fileID: 2617357622814159735, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4868731646348093096, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5218549861709959882, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
+      propertyPath: m_Radius
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 5218549861709959882, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
+      propertyPath: m_Center.y
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 8167035873484125650, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8167035873484125650, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.223
+      objectReference: {fileID: 0}
+    - target: {fileID: 8167035873484125650, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.23966804
+      objectReference: {fileID: 0}
+    - target: {fileID: 8167035873484125650, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.32855457
+      objectReference: {fileID: 0}
+    - target: {fileID: 8167035873484125650, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8167035873484125650, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8167035873484125650, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8167035873484125650, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8167035873484125650, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8167035873484125650, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8167035873484125650, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: -5482472094192424655, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
+    - {fileID: 2600836967513138410, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2617357622814159735, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 904821980}
+  m_SourcePrefab: {fileID: 100100000, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
+--- !u!4 &904821978 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8167035873484125650, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
+  m_PrefabInstance: {fileID: 904821977}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &904821979 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2617357622814159735, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
+  m_PrefabInstance: {fileID: 904821977}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &904821980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 904821979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea938f33e7d34a0a87d1504ff374db13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _chemicalCombinationsSo: {fileID: 11400000, guid: ea96f71cf1c535c43b8083a7231260b9, type: 2}
+  _element1: {fileID: 0}
+  _element2: {fileID: 0}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -530,6 +721,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 16.768, y: 0, z: 0}
+--- !u!4 &1111210973 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8167035873484125650, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
+  m_PrefabInstance: {fileID: 1468776695}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1327710756
 GameObject:
   m_ObjectHideFlags: 0
@@ -635,6 +831,87 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1327710756}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &1468776695
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1962500817}
+    m_Modifications:
+    - target: {fileID: -6387522819219094969, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
+      propertyPath: _chemicalElement
+      value: H2
+      objectReference: {fileID: 0}
+    - target: {fileID: -5482472094192424655, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
+      propertyPath: _chemicalDataSo
+      value: 
+      objectReference: {fileID: 11400000, guid: 42a5722647ee8e441a85a0d89871d730, type: 2}
+    - target: {fileID: 336912072809132316, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
+      propertyPath: m_Center.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1488180567124319412, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
+      propertyPath: interactionScript
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2617357622814159735, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
+      propertyPath: m_Name
+      value: Flask_asd
+      objectReference: {fileID: 0}
+    - target: {fileID: 2617357622814159735, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4868731646348093096, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8167035873484125650, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.886
+      objectReference: {fileID: 0}
+    - target: {fileID: 8167035873484125650, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.23966804
+      objectReference: {fileID: 0}
+    - target: {fileID: 8167035873484125650, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.32855457
+      objectReference: {fileID: 0}
+    - target: {fileID: 8167035873484125650, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8167035873484125650, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8167035873484125650, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8167035873484125650, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8167035873484125650, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8167035873484125650, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8167035873484125650, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
 --- !u!1 &1563596821
 GameObject:
   m_ObjectHideFlags: 0
@@ -740,10 +1017,10 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1563596821}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1745054361 stripped
+--- !u!4 &1891443307 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8167035873484125650, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
-  m_PrefabInstance: {fileID: 63778896}
+  m_PrefabInstance: {fileID: 34832383}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1962500816
 GameObject:
@@ -775,8 +1052,10 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1982333040}
+  - {fileID: 1111210973}
+  - {fileID: 1891443307}
   - {fileID: 867500484}
-  - {fileID: 1745054361}
+  - {fileID: 904821978}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1982333040 stripped
