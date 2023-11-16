@@ -9,7 +9,7 @@ namespace Interaction
         [SerializeField] private ChemicalCombinationsSo _chemicalCombinationsSo;
         [SerializeField] private ChemicalData _element1;
         [SerializeField] private ChemicalData _element2;
-        [SerializeField] private float _waitingCombine = 2f;
+        [SerializeField] private float _waitingCombineTime = 2f;
 
         private bool _isCombining = false;
 
@@ -52,7 +52,7 @@ namespace Interaction
                 Debug.Log("Failed to combine");
             }
 
-            yield return new WaitForSeconds(_waitingCombine);
+            yield return new WaitForSeconds(_waitingCombineTime);
 
             _element1 = null;
             _element2 = null;
