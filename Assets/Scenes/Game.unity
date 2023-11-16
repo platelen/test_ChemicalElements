@@ -194,7 +194,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8167035873484125650, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.577
+      value: -0.958
       objectReference: {fileID: 0}
     - target: {fileID: 8167035873484125650, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
       propertyPath: m_LocalPosition.y
@@ -275,7 +275,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8167035873484125650, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.158
+      value: 0.481
       objectReference: {fileID: 0}
     - target: {fileID: 8167035873484125650, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
       propertyPath: m_LocalPosition.y
@@ -433,6 +433,14 @@ PrefabInstance:
       propertyPath: _chemicalDataSo
       value: 
       objectReference: {fileID: 11400000, guid: a2e5837b3ad62e149a3007735d6a55a0, type: 2}
+    - target: {fileID: 66679988917633777, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
+      propertyPath: m_Constraints
+      value: 126
+      objectReference: {fileID: 0}
+    - target: {fileID: 336912072809132316, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
+      propertyPath: m_Radius
+      value: 0.13
+      objectReference: {fileID: 0}
     - target: {fileID: 336912072809132316, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
       propertyPath: m_Center.x
       value: -0
@@ -447,11 +455,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2617357622814159735, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
       propertyPath: m_Layer
-      value: 3
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4868731646348093096, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
       propertyPath: m_Layer
-      value: 3
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5218549861709959882, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
+      propertyPath: m_Radius
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 5218549861709959882, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
+      propertyPath: m_Center.y
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 8167035873484125650, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 8167035873484125650, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
       propertyPath: m_LocalPosition.x
@@ -495,6 +515,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -5482472094192424655, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
+    - {fileID: 2600836967513138410, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
