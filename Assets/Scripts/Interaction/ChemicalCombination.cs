@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using SO;
 using UnityEngine;
 
@@ -7,9 +6,10 @@ namespace Interaction
 {
     public class ChemicalCombination : MonoBehaviour
     {
-        [SerializeField] private List<ChemicalCombinationsSo> _chemicalCombinationsSo;
+        [SerializeField] private ChemicalCombinationsSo _chemicalCombinationsSo;
         [SerializeField] private ChemicalData _element1;
         [SerializeField] private ChemicalData _element2;
+        [SerializeField] private float _waitingCombine = 2f;
 
         private bool _isCombining = false;
 
@@ -41,12 +41,19 @@ namespace Interaction
         {
             _isCombining = true;
 
-            // Ваша логика комбинирования элементов
+            string combinationResult = _chemicalCombinationsSo.GetCombinationResult(_element1.DataSo, _element2.DataSo);
 
-            // Ждем некоторое время
-            yield return new WaitForSeconds(2f);
+            if (!string.IsNullOrEmpty(combinationResult))
+            {
+                Debug.Log("Combination found: " + combinationResult);
+            }
+            else
+            {
+                Debug.Log("Failed to combine");
+            }
 
-            // Освобождаем поля
+            yield return new WaitForSeconds(_waitingCombine);
+
             _element1 = null;
             _element2 = null;
 

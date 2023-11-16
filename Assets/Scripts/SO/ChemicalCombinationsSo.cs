@@ -1,19 +1,34 @@
+using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace SO
 {
-    [CreateAssetMenu(fileName = "Combination", menuName = "Create Chemical Combination/New Combination")]
+    [CreateAssetMenu(fileName = "ChemicalCombinations", menuName = "CreateChemicalElement/ChemicalCombinations")]
     public class ChemicalCombinationsSo : ScriptableObject
     {
-        [SerializeField] private string _combination;
-        [SerializeField] private ChemicalDataSo _element1;
-        [SerializeField] private ChemicalDataSo _element2;
+        [SerializeField] private List<CombinationData> combinations;
 
-        public string Combination => _combination;
+        [Serializable]
+        public class CombinationData
+        {
+            public ChemicalDataSo element1;
+            public ChemicalDataSo element2;
+            public string result;
+        }
 
-        public ChemicalDataSo Element1 => _element1;
+        public string GetCombinationResult(ChemicalDataSo element1, ChemicalDataSo element2)
+        {
+            foreach (var combination in combinations)
+            {
+                if ((combination.element1 == element1 && combination.element2 == element2) ||
+                    (combination.element1 == element2 && combination.element2 == element1))
+                {
+                    return combination.result;
+                }
+            }
 
-        public ChemicalDataSo Element2 => _element2;
-        
+            return "No Combination";
+        }
     }
 }
