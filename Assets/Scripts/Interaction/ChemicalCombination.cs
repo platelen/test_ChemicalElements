@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using Events;
 using SO;
 using UI_Chemical;
 using UnityEngine;
@@ -44,6 +45,7 @@ namespace Interaction
                         }
                     }
                 }
+                GlobalEvents.SendStartDraggingFalse();
             }
         }
 
