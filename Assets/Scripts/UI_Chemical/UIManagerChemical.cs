@@ -14,10 +14,11 @@ namespace UI_Chemical
 
         private string _noReaction = "Реакции нет...";
         private string _getReaction = "Вы получили: ";
-        
+
 
         private void Start()
         {
+            ResetTextElements();
             _textChemicalResult.enabled = false;
             _textGetOrNoteReaction.enabled = false;
         }
@@ -47,10 +48,10 @@ namespace UI_Chemical
             _textGetOrNoteReaction.enabled = true;
         }
 
-        private void DisabledTextResult()
+        public void ResetTextElements()
         {
-            _textChemicalResult.enabled = false;
-            _textGetOrNoteReaction.enabled = false;
+            _textElement1.text = "";
+            _textElement2.text = "";
         }
     }
 }

@@ -45,6 +45,7 @@ namespace Interaction
                         }
                     }
                 }
+
                 GlobalEvents.SendStartDraggingFalse();
             }
         }
@@ -72,8 +73,8 @@ namespace Interaction
 
             _element1 = null;
             _element2 = null;
-
             _isCombining = false;
+            _uiManagerChemical.ResetTextElements();
         }
     }
 }
