@@ -35,7 +35,7 @@ namespace SO
                     return (combination.Result,combination.ColorReaction);
                 }
             }
-            return ("No Combination",Color.white);
+            return ("",Color.white);
         }
     }
 }

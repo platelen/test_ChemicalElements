@@ -4,6 +4,9 @@ using UnityEngine.UI;
 
 namespace UI_Chemical
 {
+    /// <summary>
+    /// Вешается на Object с ChemicalCombination на сцене.
+    /// </summary>
     public class UIManagerChemical : MonoBehaviour
     {
         [SerializeField] private TextMeshProUGUI _textElement1;
@@ -11,6 +14,7 @@ namespace UI_Chemical
         [SerializeField] private Image _colorResultReaction;
         [SerializeField] private TextMeshProUGUI _textGetOrNoteReaction;
         [SerializeField] private TextMeshProUGUI _textChemicalResult;
+        [SerializeField] private GameObject _panelNoReacted;
 
         private string _noReaction = "Реакции нет...";
         private string _getReaction = "Вы получили: ";
@@ -30,6 +34,7 @@ namespace UI_Chemical
         {
             _textGetOrNoteReaction.text = _noReaction;
             _textChemicalResult.enabled = false;
+            _panelNoReacted.SetActive(true);
         }
 
         public void GetReaction(Color colorReaction, string combResult)
@@ -50,6 +55,7 @@ namespace UI_Chemical
 
         public void ResetTextElements()
         {
+            _panelNoReacted.SetActive(false);
             _textElement1.text = "";
             _textElement2.text = "";
         }
