@@ -57,6 +57,7 @@ namespace Interaction
             if (!string.IsNullOrEmpty(combinationResult))
             {
                 Debug.Log("Combination found: " + combinationResult);
+                Debug.Log("Color comb: " + colorReaction);
                 _uiManagerChemical.GetReaction(colorReaction, combinationResult);
             }
             else

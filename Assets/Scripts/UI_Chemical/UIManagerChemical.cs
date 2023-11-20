@@ -14,6 +14,7 @@ namespace UI_Chemical
 
         private string _noReaction = "Реакции нет...";
         private string _getReaction = "Вы получили: ";
+        
 
         private void Start()
         {
@@ -36,6 +37,7 @@ namespace UI_Chemical
 
             _textGetOrNoteReaction.text = _getReaction;
             _colorResultReaction.color = colorReaction;
+            _colorResultReaction.color = new Color(colorReaction.r, colorReaction.g, colorReaction.b, 1f);
             _textChemicalResult.text = combResult;
         }
 

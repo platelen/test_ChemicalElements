@@ -25,18 +25,17 @@ namespace SO
             public Color ColorReaction => _colorReaction;
         }
 
-        public (string, Color) GetCombinationResult(ChemicalDataSo element1, ChemicalDataSo element2)
+        public (string,Color) GetCombinationResult(ChemicalDataSo element1, ChemicalDataSo element2)
         {
             foreach (var combination in _combinations)
             {
                 if ((combination.Element1 == element1 && combination.Element2 == element2) ||
                     (combination.Element1 == element2 && combination.Element2 == element1))
                 {
-                    return (combination.Result, combination.ColorReaction);
+                    return (combination.Result,combination.ColorReaction);
                 }
             }
-
-            return ("No Combination", Color.white);
+            return ("No Combination",Color.white);
         }
     }
 }
