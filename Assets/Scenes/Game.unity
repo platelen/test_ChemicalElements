@@ -1959,6 +1959,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2617357622814159735, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
       insertIndex: -1
       addedObject: {fileID: 904821980}
+    - targetCorrespondingSourceObject: {fileID: 2617357622814159735, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 904821981}
   m_SourcePrefab: {fileID: 100100000, guid: b54c9a9f80b9af94196c42e58eebaede, type: 3}
 --- !u!4 &904821978 stripped
 Transform:
@@ -1986,6 +1989,23 @@ MonoBehaviour:
   _element1: {fileID: 0}
   _element2: {fileID: 0}
   _waitingCombineTime: 2
+--- !u!114 &904821981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 904821979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd136a5e804b33844b864a4e0b20bf17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textElement1: {fileID: 33581165}
+  _textElement2: {fileID: 452554008}
+  _colorResultReaction: {fileID: 1549829723}
+  _textGetOrNoteReaction: {fileID: 1898518026}
+  _textChemicalResult: {fileID: 1526484033}
 --- !u!1 &940771202
 GameObject:
   m_ObjectHideFlags: 0
