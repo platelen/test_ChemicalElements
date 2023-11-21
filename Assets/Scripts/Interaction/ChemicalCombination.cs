@@ -1,6 +1,9 @@
+using System;
 using System.Collections;
+using System.Collections.Generic;
 using Events;
 using SO;
+using TMPro;
 using UI_Chemical;
 using UnityEngine;
 
@@ -11,16 +14,25 @@ namespace Interaction
         [SerializeField] private ChemicalCombinationsSo _chemicalCombinationsSo;
         [SerializeField] private ChemicalData _element1;
         [SerializeField] private ChemicalData _element2;
-        [SerializeField] private float _waitingCombineTime = 2f;
+        [SerializeField] private float _waitingCombineTime = 3f;
 
+
+        private int _allCombine;
         private bool _isCombining = false;
         private UIManagerChemical _uiManagerChemical;
+        public event Action<string> OnSuccessfulCombination;
+        public event Action OnAllCombinationsCollected;
+        private HashSet<string> _collectedCombinations = new HashSet<string>();
+
+        public int AllCombine => _allCombine;
 
         private void Start()
         {
             _uiManagerChemical = GetComponent<UIManagerChemical>();
+            _allCombine = _chemicalCombinationsSo.GetCombinations().Count;
         }
 
+        
         private void OnTriggerEnter(Collider other)
         {
             if (!_isCombining && other.gameObject.layer == LayerMask.NameToLayer("Flask"))
@@ -60,7 +72,29 @@ namespace Interaction
             {
                 Debug.Log("Combination found: " + combinationResult);
                 Debug.Log("Color comb: " + colorReaction);
-                _uiManagerChemical.GetReaction(colorReaction, combinationResult);
+
+                if (!_collectedCombinations.Contains(combinationResult))
+                {
+                    _uiManagerChemical.GetReaction(colorReaction, combinationResult);
+                    OnSuccessfulCombination?.Invoke(combinationResult);
+
+                    _collectedCombinations.Add(combinationResult);
+                    _allCombine--;
+
+                    if (CheckAllCombinationsCollected())
+                    {
+                        Debug.Log("Congratulations! All combinations collected!");
+                        OnAllCombinationsCollected?.Invoke();
+                    }
+                    else
+                    {
+                        Debug.Log("Not all combinations collected yet!");
+                    }
+                }
+                else
+                {
+                    Debug.Log("Combination already collected: " + combinationResult);
+                }
             }
             else
             {
@@ -73,6 +107,19 @@ namespace Interaction
             _element2 = null;
             _isCombining = false;
             _uiManagerChemical.ResetTextElements();
+        }
+
+        private bool CheckAllCombinationsCollected()
+        {
+            foreach (var combination in _chemicalCombinationsSo.GetCombinations())
+            {
+                if (!_collectedCombinations.Contains(combination))
+                {
+                    return false;
+                }
+            }
+
+            return true;
         }
     }
 }

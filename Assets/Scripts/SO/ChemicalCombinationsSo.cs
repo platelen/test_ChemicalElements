@@ -8,6 +8,15 @@ namespace SO
     public class ChemicalCombinationsSo : ScriptableObject
     {
         [SerializeField] private List<CombinationData> _combinations;
+        public List<string> GetCombinations()
+        {
+            List<string> combinations = new List<string>();
+            foreach (var combination in _combinations)
+            {
+                combinations.Add(combination.Result);
+            }
+            return combinations;
+        }
 
         [Serializable]
         public class CombinationData

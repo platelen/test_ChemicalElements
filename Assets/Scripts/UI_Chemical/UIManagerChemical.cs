@@ -32,6 +32,7 @@ namespace UI_Chemical
         public void NoReacted()
         {
             _textChemicalResult.enabled = false;
+            _textGetOrNoteReaction.enabled = false;
             _panelNoReacted.SetActive(true);
         }
 
