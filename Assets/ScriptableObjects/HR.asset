@@ -10,7 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ca4a6fc5c1014d5594bacbba3e0b2c16, type: 3}
-  m_Name: asd2
+  m_Name: HR
   m_EditorClassIdentifier: 
-  _nameChemicalElement: asd
-  _elementColor: {r: 0, g: 0, b: 0, a: 0}
+  _nameChemicalElement: HR

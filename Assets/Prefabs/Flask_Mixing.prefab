@@ -95,10 +95,10 @@ GameObject:
   - component: {fileID: 1419826691353066109}
   - component: {fileID: 1846911357181800499}
   - component: {fileID: 2491629737158454902}
-  - component: {fileID: 7419026480873962627}
   - component: {fileID: 5855742376834437226}
   - component: {fileID: 6935270593052163644}
-  - component: {fileID: 6318511803499573213}
+  - component: {fileID: 8777201752613502747}
+  - component: {fileID: 5598090389026395693}
   m_Layer: 6
   m_Name: Flask_Mixing
   m_TagString: Untagged
@@ -114,7 +114,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4447296207768629289}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.223, y: -0.23966804, z: -0.32855457}
   m_LocalScale: {x: 1, y: 2.5, z: 1}
   m_ConstrainProportionsScale: 0
@@ -191,29 +191,8 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.13
-  m_Center: {x: -0, y: 0.05, z: 0.011728257}
---- !u!135 &7419026480873962627
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4447296207768629289}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.05
-  m_Center: {x: -0.0003789179, y: 0.03, z: 0}
+  m_Radius: 0.03
+  m_Center: {x: -0, y: 0.18, z: 0.011728257}
 --- !u!54 &5855742376834437226
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -253,7 +232,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb4cee18b3de4fdcbf265a4b1b8148f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &6318511803499573213
+--- !u!114 &8777201752613502747
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -265,7 +244,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea938f33e7d34a0a87d1504ff374db13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _chemicalCombinationsSo:
-  - {fileID: 11400000, guid: 43efa76d9aabb304fb4bfcd7c650e1a8, type: 2}
+  _chemicalCombinationsSo: {fileID: 11400000, guid: ea96f71cf1c535c43b8083a7231260b9, type: 2}
   _element1: {fileID: 0}
   _element2: {fileID: 0}
+  _waitingCombineTime: 2
+--- !u!114 &5598090389026395693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4447296207768629289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd136a5e804b33844b864a4e0b20bf17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textElement1: {fileID: 0}
+  _textElement2: {fileID: 0}
+  _colorResultReaction: {fileID: 0}
+  _textGetOrNoteReaction: {fileID: 0}
+  _textChemicalResult: {fileID: 0}
+  _panelNoReacted: {fileID: 0}

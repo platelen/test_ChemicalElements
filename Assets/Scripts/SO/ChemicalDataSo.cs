@@ -6,9 +6,7 @@ namespace SO
     public class ChemicalDataSo : ScriptableObject
     {
         [SerializeField] private string _nameChemicalElement;
-        [SerializeField] private Color _elementColor;
 
         public string NameChemicalElement => _nameChemicalElement;
-        public Color ElementColor => _elementColor;
     }
 }
