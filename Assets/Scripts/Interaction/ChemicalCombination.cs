@@ -65,20 +65,27 @@ namespace Interaction
             {
                 Debug.Log("Combination found: " + combinationResult);
                 Debug.Log("Color comb: " + colorReaction);
-                _uiManagerChemical.GetReaction(colorReaction, combinationResult);
-                OnSuccessfulCombination?.Invoke(combinationResult);
-                
-                // Добавляем комбинацию в список собранных
-                _collectedCombinations.Add(combinationResult);
-                
-                if (CheckAllCombinationsCollected())
+
+                if (!_collectedCombinations.Contains(combinationResult))
                 {
-                    Debug.Log("Congratulations! All combinations collected!");
-                    OnAllCombinationsCollected?.Invoke();
+                    _uiManagerChemical.GetReaction(colorReaction, combinationResult);
+                    OnSuccessfulCombination?.Invoke(combinationResult);
+                    
+                    _collectedCombinations.Add(combinationResult);
+                    
+                    if (CheckAllCombinationsCollected())
+                    {
+                        Debug.Log("Congratulations! All combinations collected!");
+                        OnAllCombinationsCollected?.Invoke();
+                    }
+                    else
+                    {
+                        Debug.Log("Not all combinations collected yet!");
+                    }
                 }
                 else
                 {
-                    Debug.Log("Not all combinations collected yet!");
+                    Debug.Log("Combination already collected: " + combinationResult);
                 }
                 
             }
