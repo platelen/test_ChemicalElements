@@ -16,7 +16,6 @@ namespace UI_Chemical
         [SerializeField] private TextMeshProUGUI _textChemicalResult;
         [SerializeField] private GameObject _panelNoReacted;
 
-        private string _noReaction = "Реакции нет...";
         private string _getReaction = "Вы получили: ";
 
 
@@ -32,7 +31,6 @@ namespace UI_Chemical
 
         public void NoReacted()
         {
-            _textGetOrNoteReaction.text = _noReaction;
             _textChemicalResult.enabled = false;
             _panelNoReacted.SetActive(true);
         }

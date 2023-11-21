@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f7da37e4f22400787cd7bf86ce88b86, type: 3}
+  m_Name: Combinations
+  m_EditorClassIdentifier: 
+  _combinations:
+  - _element1: {fileID: 11400000, guid: 5a57c0aa85619ae43a301ebd949ac1b4, type: 2}
+    _element2: {fileID: 11400000, guid: a2e5837b3ad62e149a3007735d6a55a0, type: 2}
+    _result: H3O,Cl
+    _colorReaction: {r: 1, g: 0, b: 0, a: 0}
+  - _element1: {fileID: 11400000, guid: fa46e3f24af94fd4fbabb9594355ee32, type: 2}
+    _element2: {fileID: 11400000, guid: 42a5722647ee8e441a85a0d89871d730, type: 2}
+    _result: H2SR
+    _colorReaction: {r: 0, g: 0, b: 0, a: 0}
+  - _element1: {fileID: 11400000, guid: e41de7052e7b64e45affb8f02411d299, type: 2}
+    _element2: {fileID: 11400000, guid: 27f6f1cf10cd833469dd85cea0eac114, type: 2}
+    _result: R2D2
+    _colorReaction: {r: 0.33648273, g: 0.54202336, b: 0.6679245, a: 0}
+  - _element1: {fileID: 11400000, guid: b5cb07c055c5d0e42a5c064bca02d6bc, type: 2}
+    _element2: {fileID: 11400000, guid: 64e7bb32ed1b59b4f8ccf38d9f74677c, type: 2}
+    _result: V8JAP
+    _colorReaction: {r: 1, g: 0.85505235, b: 0, a: 0}
+  - _element1: {fileID: 11400000, guid: e41de7052e7b64e45affb8f02411d299, type: 2}
+    _element2: {fileID: 11400000, guid: 64e7bb32ed1b59b4f8ccf38d9f74677c, type: 2}
+    _result: CDPR
+    _colorReaction: {r: 1, g: 0.42354256, b: 0, a: 0}
+  - _element1: {fileID: 11400000, guid: a2e5837b3ad62e149a3007735d6a55a0, type: 2}
+    _element2: {fileID: 11400000, guid: b5cb07c055c5d0e42a5c064bca02d6bc, type: 2}
+    _result: CIA
+    _colorReaction: {r: 1, g: 0, b: 0.7342057, a: 0}
+  - _element1: {fileID: 11400000, guid: fa46e3f24af94fd4fbabb9594355ee32, type: 2}
+    _element2: {fileID: 11400000, guid: b5cb07c055c5d0e42a5c064bca02d6bc, type: 2}
+    _result: HR4V
+    _colorReaction: {r: 0.21039653, g: 1, b: 0, a: 0}

@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using Events;
 using SO;
@@ -65,7 +64,6 @@ namespace Interaction
             }
             else
             {
-                Debug.Log("Failed to combine");
                 _uiManagerChemical.NoReacted();
             }
 
