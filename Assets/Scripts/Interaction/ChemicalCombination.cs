@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using Events;
 using SO;
@@ -15,6 +16,7 @@ namespace Interaction
 
         private bool _isCombining = false;
         private UIManagerChemical _uiManagerChemical;
+        public event Action<string> OnSuccessfulCombination;
 
         private void Start()
         {
@@ -61,6 +63,7 @@ namespace Interaction
                 Debug.Log("Combination found: " + combinationResult);
                 Debug.Log("Color comb: " + colorReaction);
                 _uiManagerChemical.GetReaction(colorReaction, combinationResult);
+                OnSuccessfulCombination?.Invoke(combinationResult);
             }
             else
             {
