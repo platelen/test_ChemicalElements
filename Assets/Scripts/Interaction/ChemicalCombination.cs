@@ -13,7 +13,7 @@ namespace Interaction
         [SerializeField] private ChemicalCombinationsSo _chemicalCombinationsSo;
         [SerializeField] private ChemicalData _element1;
         [SerializeField] private ChemicalData _element2;
-        [SerializeField] private float _waitingCombineTime = 2f;
+        [SerializeField] private float _waitingCombineTime = 3f;
 
         private bool _isCombining = false;
         private UIManagerChemical _uiManagerChemical;

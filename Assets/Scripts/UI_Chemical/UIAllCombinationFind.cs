@@ -1,3 +1,4 @@
+using Events;
 using Interaction;
 using TMPro;
 using UnityEngine;
@@ -13,7 +14,6 @@ namespace UI_Chemical
 
         private bool _allCombinationsCollected = false;
         private string _defaultCombine = "Не все комбинации собраны!";
-        private string _collectedCombine = "Поздравляю! Все комбинации собраны!";
 
         private void Start()
         {
@@ -36,7 +36,7 @@ namespace UI_Chemical
         private void HandleAllCombinationsCollected()
         {
             _allCombinationsCollected = true;
-            _textAllCombine.text = _collectedCombine;
+            GlobalEvents.SendStartFinishGame();
         }
     }
 }
