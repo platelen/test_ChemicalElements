@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using Events;
 using SO;
 using UI_Chemical;
@@ -17,6 +18,8 @@ namespace Interaction
         private bool _isCombining = false;
         private UIManagerChemical _uiManagerChemical;
         public event Action<string> OnSuccessfulCombination;
+        public event Action OnAllCombinationsCollected;
+        private HashSet<string> _collectedCombinations = new HashSet<string>();
 
         private void Start()
         {
@@ -64,6 +67,20 @@ namespace Interaction
                 Debug.Log("Color comb: " + colorReaction);
                 _uiManagerChemical.GetReaction(colorReaction, combinationResult);
                 OnSuccessfulCombination?.Invoke(combinationResult);
+                
+                // Добавляем комбинацию в список собранных
+                _collectedCombinations.Add(combinationResult);
+                
+                if (CheckAllCombinationsCollected())
+                {
+                    Debug.Log("Congratulations! All combinations collected!");
+                    OnAllCombinationsCollected?.Invoke();
+                }
+                else
+                {
+                    Debug.Log("Not all combinations collected yet!");
+                }
+                
             }
             else
             {
@@ -77,5 +94,18 @@ namespace Interaction
             _isCombining = false;
             _uiManagerChemical.ResetTextElements();
         }
+        
+        private bool CheckAllCombinationsCollected()
+        {
+            foreach (var combination in _chemicalCombinationsSo.GetCombinations())
+            {
+                if (!_collectedCombinations.Contains(combination))
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+        
     }
 }
