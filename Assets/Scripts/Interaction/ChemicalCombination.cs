@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Events;
 using SO;
+using TMPro;
 using UI_Chemical;
 using UnityEngine;
 
@@ -15,17 +16,23 @@ namespace Interaction
         [SerializeField] private ChemicalData _element2;
         [SerializeField] private float _waitingCombineTime = 3f;
 
+
+        private int _allCombine;
         private bool _isCombining = false;
         private UIManagerChemical _uiManagerChemical;
         public event Action<string> OnSuccessfulCombination;
         public event Action OnAllCombinationsCollected;
         private HashSet<string> _collectedCombinations = new HashSet<string>();
 
+        public int AllCombine => _allCombine;
+
         private void Start()
         {
             _uiManagerChemical = GetComponent<UIManagerChemical>();
+            _allCombine = _chemicalCombinationsSo.GetCombinations().Count;
         }
 
+        
         private void OnTriggerEnter(Collider other)
         {
             if (!_isCombining && other.gameObject.layer == LayerMask.NameToLayer("Flask"))
@@ -70,9 +77,10 @@ namespace Interaction
                 {
                     _uiManagerChemical.GetReaction(colorReaction, combinationResult);
                     OnSuccessfulCombination?.Invoke(combinationResult);
-                    
+
                     _collectedCombinations.Add(combinationResult);
-                    
+                    _allCombine--;
+
                     if (CheckAllCombinationsCollected())
                     {
                         Debug.Log("Congratulations! All combinations collected!");
@@ -87,7 +95,6 @@ namespace Interaction
                 {
                     Debug.Log("Combination already collected: " + combinationResult);
                 }
-                
             }
             else
             {
@@ -101,7 +108,7 @@ namespace Interaction
             _isCombining = false;
             _uiManagerChemical.ResetTextElements();
         }
-        
+
         private bool CheckAllCombinationsCollected()
         {
             foreach (var combination in _chemicalCombinationsSo.GetCombinations())
@@ -111,8 +118,8 @@ namespace Interaction
                     return false;
                 }
             }
+
             return true;
         }
-        
     }
 }

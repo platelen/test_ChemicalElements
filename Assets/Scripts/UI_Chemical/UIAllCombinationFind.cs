@@ -1,3 +1,4 @@
+using System;
 using Events;
 using Interaction;
 using TMPro;
@@ -11,6 +12,7 @@ namespace UI_Chemical
         [SerializeField] private GameObject _panelRect;
         [SerializeField] private GameObject _objectResultCombinePrefab;
         [SerializeField] private TextMeshProUGUI _textAllCombine;
+        [SerializeField] private TextMeshProUGUI _textCountCombine;
 
         private bool _allCombinationsCollected = false;
         private string _defaultCombine = "Не все комбинации собраны!";
@@ -20,6 +22,12 @@ namespace UI_Chemical
             _chemicalCombination.OnSuccessfulCombination += HandleSuccessfulCombination;
             _chemicalCombination.OnAllCombinationsCollected += HandleAllCombinationsCollected;
             _textAllCombine.text = _defaultCombine;
+            _textCountCombine.text = $"Осталость собрать: {_chemicalCombination.AllCombine.ToString()}.";
+        }
+
+        private void Update()
+        {
+            _textCountCombine.text = $"Осталость собрать: {_chemicalCombination.AllCombine.ToString()}.";
         }
 
         private void HandleSuccessfulCombination(string combinationResult)
